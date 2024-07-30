@@ -23,9 +23,7 @@ import {
 import CBInformation from '@/components/CBInformation';
 
 
-const InboxView = async () => {
-    await protectedRoute();
-
+const InboxView = () => {
     return (
         <PageContainer>
             <h2 className="mb-2 scroll-m-20 pb-2 text-3xl font-semibold tracking-tight first:mt-0">
