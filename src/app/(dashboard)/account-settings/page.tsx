@@ -21,7 +21,7 @@ import {
     CardTitle,
 } from "@/components/ui/card"
 
-export function CBInformation() {
+function CBInformation() {
     return (
         <Card>
             <CardHeader>
