@@ -23,11 +23,12 @@ import { FC } from 'react';
 //   );
 // };
 
-export default function DashboardLayout({
-  children
-}: {
+type LayoutAppProps = {
   children: React.ReactNode;
-}) {
+};
+
+const LayoutApp: FC<LayoutAppProps> = async ({ children }) => {
+  await protectedRoute();
   return (
     <div className="flex">
       <Sidebar />
@@ -38,3 +39,5 @@ export default function DashboardLayout({
     </div>
   );
 }
+
+export default LayoutApp;
