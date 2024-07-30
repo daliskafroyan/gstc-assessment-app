@@ -19,7 +19,7 @@ export default function RootLayout({
           'min-h-screen bg-muted/40 font-sans antialiased ',
           fontSans.variable
         )}>
-        <NextTopLoader />
+        <NextTopLoader showSpinner={false} />
         <Providers>{children}</Providers>
       </body>
     </html>
