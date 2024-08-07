@@ -37,11 +37,11 @@ export function DashboardNav({
         return null;
     }
 
-    console.log('isActive', isMobileNav, isMinimized);
+    console.log('#debug path', `/${path.split('/').slice(1)[0]}`)
 
     return (
         <nav className="grid items-start gap-2">
-            <TooltipProvider>
+            <TooltipProvider delayDuration={100}>
                 {items.map((item, index) => {
                     const Icon = Icons[item.icon || 'arrowRight'];
                     return (
@@ -52,7 +52,7 @@ export function DashboardNav({
                                         href={item.disabled ? '/' : item.href}
                                         className={cn(
                                             'flex items-center gap-2 overflow-hidden rounded-md py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground',
-                                            path === item.href ? 'bg-accent' : 'transparent',
+                                            `/${path.split('/').slice(1)[0]}` === item.href ? 'bg-accent' : 'transparent',
                                             item.disabled && 'cursor-not-allowed opacity-80'
                                         )}
                                         onClick={() => {

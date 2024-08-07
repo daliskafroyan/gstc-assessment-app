@@ -43,19 +43,15 @@ export const accountsTable = sqliteTable('accounts', {
   ...timestamps,
 });
 
-// This is customizable for your needs
 export const profilesTable = sqliteTable('profile', {
   id: idField(),
   userID: text('user_id')
     .references(() => usersTable.id, { onDelete: 'cascade' })
     .unique()
     .notNull(),
-  // Add your fields below here
-  name: text('name'),
+  firstName: text('first_name'),
   lastName: text('last_name'),
   phone: text('phone'),
-  house: text('house'),
-  adminSWID: text('admin_swid'),
   image: text('image'),
   extras: text('extras', { mode: 'json' }),
   ...timestamps,

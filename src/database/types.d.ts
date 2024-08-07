@@ -11,6 +11,7 @@ import {
 export type InsertProfile = typeof profilesTable.$inferInsert;
 export type SelectProfile = typeof profilesTable.$inferSelect;
 export type UpdateProfile = Partial<Omit<SelectProfile, 'id' | 'userID'>>;
+export type UpdateAvatar = Partial<Pick<SelectProfile, 'image'>>;
 
 export type InsertUser = typeof usersTable.$inferInsert;
 export type SelectUser = typeof usersTable.$inferSelect;

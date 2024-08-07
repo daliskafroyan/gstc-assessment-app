@@ -2,10 +2,10 @@ import { NavItem } from "@/components/layout/DashboardNav";
 
 export const navItems: NavItem[] = [
     {
-        title: 'Account Settings',
-        href: '/account-settings',
+        title: 'Settings',
+        href: '/settings',
         icon: 'user',
-        label: 'Account Settings'
+        label: 'Settings'
     },
     // {
     //     title: 'User',
