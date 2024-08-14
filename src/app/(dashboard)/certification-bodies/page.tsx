@@ -151,7 +151,7 @@ export default function CertificationBodyPage() {
                                         <FormItem>
                                             <FormLabel>Address</FormLabel>
                                             <FormControl>
-                                                <Input {...field} required />
+                                                <Input {...field} />
                                             </FormControl>
                                             <FormMessage />
                                         </FormItem>
@@ -164,7 +164,7 @@ export default function CertificationBodyPage() {
                                         <FormItem>
                                             <FormLabel>CB Headquarters</FormLabel>
                                             <FormControl>
-                                                <Input {...field} required />
+                                                <Input {...field} />
                                             </FormControl>
                                             <FormMessage />
                                         </FormItem>
@@ -177,7 +177,7 @@ export default function CertificationBodyPage() {
                                         <FormItem>
                                             <FormLabel>Affiliate Office(s)</FormLabel>
                                             <FormControl>
-                                                <Input {...field} required />
+                                                <Input {...field} />
                                             </FormControl>
                                             <FormMessage />
                                         </FormItem>
@@ -190,7 +190,7 @@ export default function CertificationBodyPage() {
                                         <FormItem>
                                             <FormLabel>Website</FormLabel>
                                             <FormControl>
-                                                <Input {...field} type="url" required />
+                                                <Input {...field} type="url" />
                                             </FormControl>
                                             <FormMessage />
                                         </FormItem>
@@ -203,7 +203,7 @@ export default function CertificationBodyPage() {
                                         <FormItem>
                                             <FormLabel>CB Main Contact</FormLabel>
                                             <FormControl>
-                                                <Input {...field} required />
+                                                <Input {...field} />
                                             </FormControl>
                                             <FormMessage />
                                         </FormItem>
