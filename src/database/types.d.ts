@@ -6,7 +6,14 @@ import {
   sessionsTable,
   usersTable,
   verificationTokensTable,
+  certificationBodiesTable
 } from './schema';
+
+import { InferModel } from 'drizzle-orm';
+
+export type InsertCertificationBody = InferModel<typeof certificationBodiesTable, 'insert'>;
+export type SelectCertificationBody = InferModel<typeof certificationBodiesTable, 'select'>;
+export type UpdateCertificationBody = Partial<Omit<InsertCertificationBody, 'id' | 'userID'>>;
 
 export type InsertProfile = typeof profilesTable.$inferInsert;
 export type SelectProfile = typeof profilesTable.$inferSelect;

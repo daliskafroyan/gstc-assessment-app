@@ -87,3 +87,18 @@ export const verificationTokensTable = sqliteTable('verification_tokens', {
   token: text('token').notNull().unique(),
   ...tokenFields,
 });
+
+export const certificationBodiesTable = sqliteTable('certification_body', {
+  id: idField(),
+  userID: text('user_id')
+    .references(() => usersTable.id, { onDelete: 'cascade' })
+    .unique()
+    .notNull(),
+  name: text('name'),
+  address: text('address'),
+  headquarters: text('headquarters'),
+  affiliateOffices: text('affiliate_offices'),
+  website: text('website'),
+  mainContact: text('main_contact'),
+  ...timestamps,
+});

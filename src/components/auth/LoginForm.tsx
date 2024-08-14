@@ -115,7 +115,16 @@ export const LoginForm = () => {
 
   return (
     <section className="w-full lg:grid lg:min-h-[600px] lg:grid-cols-2 xl:min-h-[800px] h-screen">
-      <div className="flex items-center justify-center py-12">
+      <div className="flex items-center justify-center py-12 relative">
+        <div className="absolute top-8 left-[5rem]">
+          <Image
+            src="/gstc-logo.png"
+            alt="GSTC Logo"
+            width={150}
+            height={100}
+            objectFit="contain"
+          />
+        </div>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="mx-auto grid w-[350px] gap-6">
             <div className="grid gap-2 text-start">

@@ -7,7 +7,14 @@ export const navItems: NavItem[] = [
         icon: 'user',
         label: 'Settings'
     },
+    {
+        title: 'Certification Bodies',
+        href: '/certification-bodies',
+        icon: 'user',
+        label: 'Certification Bodies'
+    },
     // {
+
     //     title: 'User',
     //     href: '/dashboard/user',
     //     icon: 'user',

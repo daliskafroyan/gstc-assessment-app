@@ -6,6 +6,7 @@ import {
 
 export const QueryKeyFactory = createServerActionsKeyFactory({
     getProfile: () => ["profile"],
+    getCertificationBody: () => ["certificationBody"],
 })
 
 const {
