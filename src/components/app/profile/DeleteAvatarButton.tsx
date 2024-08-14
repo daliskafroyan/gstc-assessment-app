@@ -1,6 +1,6 @@
 'use client'
 
-import { deleteAvatarAction } from "@/app/(dashboard)/profile/action";
+import { deleteAvatarAction } from "@/app/(dashboard)/settings/profile/action";
 import { GetProfileUserResponse } from "@/backend/actions/auth";
 import { Button } from "@/components/ui/button";
 import { UploadButton } from "@/components/ui/uploadthing-button";

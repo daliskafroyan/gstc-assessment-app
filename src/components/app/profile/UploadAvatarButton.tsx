@@ -1,6 +1,6 @@
 'use client'
 
-import { saveAvatarAction } from "@/app/(dashboard)/profile/action";
+import { saveAvatarAction } from "@/app/(dashboard)/settings/profile/action";
 import { GetProfileUserResponse } from "@/backend/actions/auth";
 import { UploadButton } from "@/components/ui/uploadthing-button";
 import { revalidatePath } from "next/cache";
